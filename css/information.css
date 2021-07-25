@@ -86,6 +86,16 @@
    
 }
 
+/* ul list */
+.details {
+    list-style-type: none;
+}
+
+/* list elements */
+.brandName, .qty, .edit, .sub, .total, .shipping, .tax {
+    font-family: 'Lexend', sans-serif;
+}
+
 /* button edit */
 #edit {
     padding: 0.35em 1.2em;
@@ -102,6 +112,10 @@
 
 #edit:hover {
     background-color: #0f90db;
+}
+
+.break {
+    margin: 20px;
 }
 
 
