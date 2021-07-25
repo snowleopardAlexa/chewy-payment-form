@@ -9,3 +9,25 @@
     justify-content: space-around;
     counter-reset: step;
 }
+
+.checkoutStepper li {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+}
+
+.checkoutStepper li:before {
+    content: counter(step);
+    counter-increment: step;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #0f90db;
+    display: block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    margin: auto;
+}
+
+
+
