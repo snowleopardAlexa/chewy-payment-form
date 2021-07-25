@@ -1,0 +1,47 @@
+/* HEADER */
+/* allows to include the padding and border in an element's total width and height */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+     background-color: rgb(10, 129, 207);
+     padding: 40px;
+}
+
+#header-title {
+    font-family: 'Chewy', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 5rem;
+}
+
+#header-subtitle{
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+#footer-title {
+    font-family: 'Chewy', cursive;
+    text-align: center;
+    color: #ffffff;
+    font-size: 3rem;
+}
+
+#footer-subtitle{
+    font-family: 'Lexend', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 1rem;
+}
