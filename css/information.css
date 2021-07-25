@@ -1,7 +1,12 @@
 /* NAVIGATION */
+.checkoutStepper {
+    margin-top: 25px;
+}
+
 .checkoutStepper ul {
     list-style: none;
-    color: #0f90db;
+    color: #131516;
+    font-family: 'Chewy', cursive;
     width: 90%;
     position: relative;
     margin: 0 auto 1em;
@@ -14,6 +19,7 @@
     display: inline-block;
     cursor: pointer;
     text-align: center;
+    font-size: 1.2em;
 }
 
 .checkoutStepper li:before {
@@ -34,7 +40,7 @@
     content: "";
     width: 78%;
     height: 3px;
-    background-color: #07527e;
+    background-color: #0f90db;
     display: block;
     position: absolute;
     top: 27.5px;
@@ -42,18 +48,22 @@
 }
 
 .checkoutStepper li.active:before {
-    background-color: #df6310;
+    background-color: #17bacf;
 }
 
 .checkoutStepper a {
     color: #666665;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.2em;
     padding-top: 37px;
 }
 
 .checkoutStepper .active a {
     color: grey;
+}
+
+@media screen and (min-width: 600px) {
+
 }
 
 
