@@ -78,10 +78,19 @@
    
 }
 
-#orderSummary, #info {
+#orderSummary {
     margin: 0 auto;
     padding: 50px;
-    border: 1px solid red;
+    border: 1px solid #ccc;
+    width: 80%;
+}
+
+#info {
+    margin: 0 auto;
+    padding: 50px;
+    border-bottom: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     width: 80%;
 }
 

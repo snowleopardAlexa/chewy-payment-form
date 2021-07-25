@@ -37,6 +37,7 @@
              <article class="item">
                  <ul class="details">
                      <li class="title"><h1>Your Order</h1></li>
+                     <li class="edit"><a href="#"><button id="edit">Edit Cart</button></a></li>
                      <li class="image"><img src="img/royal-canin-kitten.jpg" alt="Royal Canin Kitten" width="120px" height="100px"></li>
                      <li class="brandName"><h1>
                         Royal Canin Feline Health Nutrition Thin Slices in Gravy Wet Kitten Food, 3-oz, case of 24</h1></li>
@@ -49,8 +50,7 @@
                          <img src="img/minus-in-square-outlined-interface-button.png" class="img-qty" onClick="decrement()" alt="minus button"/>
                          <span>36.52$</span>
                      </li>   
-                     <hr class="break">
-                     <li class="edit"><a href="#"><button id="edit">Edit</button></a></li>
+
                      <hr class="break">
                      <li class="sub"><span>Subtotal:</span> <span>$36.52</span></li>   
                      <li class="shipping"><span>Flat-Rate Shipping</span> <span>4.95$</span></li>
@@ -150,7 +150,10 @@
         var x = e.target.value.replace(/\D/g, '').match(/(\d{0,3})(\d{0,3})(\d{0,4})/);
         e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
         });
-        
+
+        // add zip-code validation
+
+
     </script>
 </body>
 </html>
