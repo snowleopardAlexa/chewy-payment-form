@@ -40,7 +40,15 @@
                      <li class="image"><img src="img/royal-canin-kitten.jpg" alt="Royal Canin Kitten" width="120px" height="100px"></li>
                      <li class="brandName"><h1>
                         Royal Canin Feline Health Nutrition Thin Slices in Gravy Wet Kitten Food, 3-oz, case of 24</h1></li>
-                     <li class="qty"><span>Qty: </span> <span>1</span> <span>36.52$</span></li>   
+                     <li class="qty">
+                         <span>Qty:</span>
+                         <!--increment button-->
+                         <img src="img/cross-in-square.png" class="img-qty" onClick="increment()" alt="plus button"/>
+                         <input id="qty" type="number" min="1" max="50">
+                         <!--decrement button-->
+                         <img src="img/minus-in-square-outlined-interface-button.png" class="img-qty" onClick="decrement()" alt="minus button"/>
+                         <span>36.52$</span>
+                     </li>   
                      <hr class="break">
                      <li class="edit"><a href="#"><button id="edit">Edit</button></a></li>
                      <hr class="break">
@@ -48,7 +56,7 @@
                      <li class="shipping"><span>Flat-Rate Shipping</span> <span>4.95$</span></li>
                      <li class="tax"><span>Estimated Tax:</span> <span>$3.68</span></li>
                      <hr class="break">
-                     <li class="total"><span>Order Total</span> <span>$45.15</span></li>
+                     <li class="total"><span>Order Total:</span> <span>$45.15</span></li>
                  </ul>
              </article>
          </section>
@@ -70,5 +78,14 @@
           <h1 id="footer-title">Chewy</h1>
           <h3 id="footer-subtitle">with love to pets</h3> 
     </footer>
+    <script>
+        function increment() {
+            document.getElementById('qty').stepUp();
+        }
+        function decrement() {
+            document.getElementById('qty').stepDown();
+        }
+
+    </script>
 </body>
 </html>

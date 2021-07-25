@@ -85,7 +85,7 @@
     width: 80%;
 }
 
-/* ul list */
+/* UL list */
 .details {
     list-style-type: none;
 }
@@ -98,6 +98,21 @@
 
 .title {
     margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.qty, .sub, .shipping, .tax {
+    font-size: 1.1rem;
+}
+
+/* increment and decrement btn */
+.img-qty {
+   width: 22px;
+   height: 22px;
+}
+
+.total {
     font-size: 1.5rem;
     font-weight: bold;
 }
