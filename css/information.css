@@ -29,5 +29,32 @@
     margin: auto;
 }
 
+/* line above the checkoutStepper */
+.checkoutStepper ul:after {
+    content: "";
+    width: 78%;
+    height: 3px;
+    background-color: #07527e;
+    display: block;
+    position: absolute;
+    top: 27.5px;
+    z-index: -1;
+}
+
+.checkoutStepper li.active:before {
+    background-color: #df6310;
+}
+
+.checkoutStepper a {
+    color: #666665;
+    text-decoration: none;
+    font-size: 1.3em;
+    padding-top: 37px;
+}
+
+.checkoutStepper .active a {
+    color: grey;
+}
+
 
 
