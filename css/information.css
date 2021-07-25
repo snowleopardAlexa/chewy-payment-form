@@ -159,6 +159,11 @@ legend {
     font-family: 'Lexend', sans-serif;
 }
 
+/* displays labels above inputs */
+input, label {
+    display: block;
+}
+
 input {
     border: 1px solid #ccc;
     font-size: 1.0em;
