@@ -61,14 +61,76 @@
              </article>
          </section>
     <!--personal details-->
+        <section id="info">
+            <form action="#" id="personalDetails">
+                <fieldset>
+                    <legend>Contact Information</legend>
+                    <!--email-->
+                    <div class="field-email">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder=" ">
+                    </div>
+                    <!--checkbox-->
+                    <div class="checkbox-email">
+                        <input type="checkbox" id="custom-checkbox" class="custom-checbox" checked>
+                        <span class="custom-checkbox-span" tabindex="0"></span>
+                        <label for="custom-checbox" class="custom-checkbox-label">Send me weekly exlusive offers</label>
+                    </div>
+                </fieldset>
+                <!--shipping information-->
+                <fieldset id="shipping-info">
+                    <legend>Shipping Information</legend>
+                    <div class="container">
+                    <div class="firstName">
+                       <input type="text" id="firstName" name="firstName" placeholder=" " required>
+                       <label for="firstName">First Name</label>
+                    </div>
 
+                    <div class="lastName">
+                        <input type="text" id="lastName" name="lastName" placeholder=" " required>
+                        <label for="lastName">Last Name</label>
+                     </div>
+                     
+                     <div class="Address">
+                        <input type="text" id="address" name="address" placeholder=" " required>
+                        <label for="address">Address</label>
+                     </div>
+                         
+                     <div class="suite">
+                         <input type="text" id="suite" name="suite" placeholder=" ">
+                         <label for="suite">(optional) Apartment, suite, etc)</label>
+                     </div>
+                     
+                     <div class="city">
+                        <input type="text" id="zip" name="zip" placeholder=" " pattern="[0-9]*" maxlength="5" required>
+                        <label for="zip">Zip Code <span class="zip-error">(Not a real zip code)</span></label>
+                     </div>
+                 
+                     <div class="state">
+                         <input type="text" id="city" name="city" placeholder=" " required>
+                         <label for="city">City</label>
+                     </div>
+                     
+                     <div class="zip">
+                         <input type="text" id="state" name="state" placeholder=" " required>
+                         <label for="state">State</label>
+                     </div>
+                     
+                     <div class="phone">
+                         <input type="tel" id="phone" name="phone" placeholder=" " required>
+                         <label for="phone">Phone (123) 456-7890</label>
+                     </div>
+                     </div>
+                </fieldset>
+
+                <!--button continue to shipping page-->
+                <a href="shipping.html" class="btn-shipping">Continue to shipping</a>
+            </form>
+        </section>
 
      </div>    
-
-
-
-
-
+    
+    
 
 
 

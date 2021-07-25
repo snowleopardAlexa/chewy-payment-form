@@ -9,6 +9,8 @@
 .hero {
      background-color: rgb(10, 129, 207);
      padding: 40px;
+     position: sticky; 
+     top: 0;
 }
 
 #header-title {
