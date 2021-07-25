@@ -83,7 +83,6 @@
     padding: 50px;
     border: 1px solid red;
     width: 80%;
-   
 }
 
 /* ul list */
@@ -92,8 +91,15 @@
 }
 
 /* list elements */
-.brandName, .qty, .edit, .sub, .total, .shipping, .tax {
+.title, .brandName, .qty, .edit, .sub, .total, .shipping, .tax {
     font-family: 'Lexend', sans-serif;
+    margin-top: 10px;
+}
+
+.title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 /* button edit */
@@ -115,7 +121,9 @@
 }
 
 .break {
+    height: 2px;
     margin: 20px;
+    color: blue;
 }
 
 
