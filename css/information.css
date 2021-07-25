@@ -162,6 +162,7 @@ legend {
 /* displays labels above inputs */
 input, label {
     display: block;
+    margin: 10px;
 }
 
 input {

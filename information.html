@@ -82,38 +82,39 @@
                     <legend>Shipping Information</legend>
                     <div class="container">
                     <div class="fullName">
-                       <input type="text" id="firstName" name="fullName" placeholder=" " required size="60">
                        <label for="firstName">Full Name</label>
+                       <input type="text" id="fullName" name="fullName" placeholder=" " required size="60">
                     </div>
                      
                      <div class="address">
-                        <input type="text" id="address" name="address" placeholder=" " required size="60">
                         <label for="address">Address</label>
+                        <input type="text" id="address" name="address" placeholder=" " required size="60">
                      </div>
                          
                      <div class="suite">
-                         <input type="text" id="suite" name="suite" placeholder=" ">
                          <label for="suite">Apt \ Suite \ Other</label>
+                         <input type="text" id="suite" name="suite" placeholder=" ">
                      </div>
                      
                      <div class="city">
-                        <input type="text" id="zip" name="zip" placeholder=" " pattern="[0-9]*" maxlength="5" required>
+                         <label for="city">City</label>
+                         <input type="text" id="city" name="city" placeholder=" " required>
+                     </div>
+                     
+                     <div class="state">
+                         <label for="state">State</label>
+                         <input type="text" id="state" name="state" placeholder=" " required>
+                     </div>
+
+                     <div class="zip-code">
                         <label for="zip">Zip Code <span class="zip-error">(Not a real zip code)</span></label>
+                        <input type="text" id="zip" name="zip" placeholder=" " pattern="[0-9]*" maxlength="5" required>
                      </div>
                  
-                     <div class="state">
-                         <input type="text" id="city" name="city" placeholder=" " required>
-                         <label for="city">City</label>
-                     </div>
-                     
-                     <div class="zip-code">
-                         <input type="text" id="state" name="state" placeholder=" " required>
-                         <label for="state">State</label>
-                     </div>
                      
                      <div class="phone">
-                         <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
                          <label for="phone">Phone</label>
+                         <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
                      </div>
                      </div>
                 </fieldset>
