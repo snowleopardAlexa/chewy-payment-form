@@ -154,18 +154,27 @@ fieldset {
     margin-bottom: 20px;
 }
 
-
 legend {
     font-size: 2rem;
     font-family: 'Lexend', sans-serif;
 }
 
-
 input {
-    border: 1px solid red;
+    border: 1px solid #ccc;
+    font-size: 1.0em;
+    border-radius: 3px;
+    padding: .8em;
+    cursor: text;
+    color: #707070;
 }
 
+#shipping-info {
+    margin-top: 20px;
+}
+
+/* grid form */
 .container {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -173,28 +182,38 @@ input {
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "firstName lastName ."
-      "Address Address ."
-      "suite suite ."
-      "city state zip"
-      "phone . .";
+      "fullName fullName fullName"
+      "address address address"
+      "apt-suite-other apt-suite-other apt-suite-other"
+      "city state zip-code"
+      "phone phone phone";
     width: 100%;
     height: 100%;
   }
   
-  .firstName { grid-area: firstName; }
+  .fullName { grid-area: fullName; }
   
-  .lastName { grid-area: lastName; }
+  .address { grid-area: address; }
   
-  .Address { grid-area: Address; }
-  
-  .suite { grid-area: suite; }
+  .apt-suite-other { grid-area: apt-suite-other; }
   
   .city { grid-area: city; }
   
   .state { grid-area: state; }
   
-  .zip { grid-area: zip; }
+  .zip-code { grid-area: zip-code; }
   
   .phone { grid-area: phone; }
+  
+  
+  
+
+
+
+
+
+
+
+
+
   

@@ -71,7 +71,7 @@
                         <input type="email" name="email" id="email" placeholder=" ">
                     </div>
                     <!--checkbox-->
-                    <div class="checkbox-email">
+                    <div class="field-checkbox">
                         <input type="checkbox" id="custom-checkbox" class="custom-checbox" checked>
                         <span class="custom-checkbox-span" tabindex="0"></span>
                         <label for="custom-checbox" class="custom-checkbox-label">Send me weekly exlusive offers</label>
@@ -81,24 +81,19 @@
                 <fieldset id="shipping-info">
                     <legend>Shipping Information</legend>
                     <div class="container">
-                    <div class="firstName">
-                       <input type="text" id="firstName" name="firstName" placeholder=" " required>
-                       <label for="firstName">First Name</label>
+                    <div class="fullName">
+                       <input type="text" id="firstName" name="fullName" placeholder=" " required size="60">
+                       <label for="firstName">Full Name</label>
                     </div>
-
-                    <div class="lastName">
-                        <input type="text" id="lastName" name="lastName" placeholder=" " required>
-                        <label for="lastName">Last Name</label>
-                     </div>
                      
-                     <div class="Address">
-                        <input type="text" id="address" name="address" placeholder=" " required>
+                     <div class="address">
+                        <input type="text" id="address" name="address" placeholder=" " required size="60">
                         <label for="address">Address</label>
                      </div>
                          
                      <div class="suite">
                          <input type="text" id="suite" name="suite" placeholder=" ">
-                         <label for="suite">(optional) Apartment, suite, etc)</label>
+                         <label for="suite">Apt \ Suite \ Other</label>
                      </div>
                      
                      <div class="city">
@@ -111,14 +106,14 @@
                          <label for="city">City</label>
                      </div>
                      
-                     <div class="zip">
+                     <div class="zip-code">
                          <input type="text" id="state" name="state" placeholder=" " required>
                          <label for="state">State</label>
                      </div>
                      
                      <div class="phone">
-                         <input type="tel" id="phone" name="phone" placeholder=" " required>
-                         <label for="phone">Phone (123) 456-7890</label>
+                         <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
+                         <label for="phone">Phone</label>
                      </div>
                      </div>
                 </fieldset>
