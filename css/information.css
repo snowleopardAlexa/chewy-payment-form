@@ -1,0 +1,11 @@
+/* NAVIGATION */
+.checkoutStepper ul {
+    list-style: none;
+    color: #0f90db;
+    width: 90%;
+    position: relative;
+    margin: 0 auto 1em;
+    display: flex;
+    justify-content: space-around;
+    counter-reset: step;
+}
