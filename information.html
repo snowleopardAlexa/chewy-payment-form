@@ -32,6 +32,65 @@
 
 <!--section main content-->
      <div class="mainContent">
+     <!--personal details-->
+     <section id="info">
+        <form action="#" id="personalDetails">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <!--email-->
+                <div class="field-email">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder=" ">
+                </div>
+                <!--checkbox-->
+                <div class="field-checkbox">
+                    <input type="checkbox" id="custom-checkbox" class="custom-checbox" checked>
+                    <span class="custom-checkbox-span" tabindex="0"></span>
+                    <label for="custom-checbox" class="custom-checkbox-label">Send me weekly exlusive offers</label>
+                </div>
+            </fieldset>
+            <!--shipping information-->
+            <fieldset id="shipping-info">
+                <legend>Shipping Information</legend>
+                <div class="container">
+                <div class="fullName">
+                   <input type="text" id="fullName" name="fullName" placeholder="Full Name" required size="60" autocomplete="off">
+                   <label for="firstName">Full Name:</label>
+                </div>
+                 
+                 <div class="address">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" placeholder=" " required size="60">
+                 </div>
+                     
+                 <div class="suite">
+                     <label for="suite">Apt \ Suite \ Other</label>
+                     <input type="text" id="suite" name="suite" placeholder=" ">
+                 </div>
+                 
+                 <div class="city">
+                     <label for="city">City</label>
+                     <input type="text" id="city" name="city" placeholder=" " required>
+                 </div>
+                 
+                 <div class="state">
+                     <label for="state">State</label>
+                     <input type="text" id="state" name="state" placeholder=" " required>
+                 </div>
+
+                 <div class="zip-code">
+                    <label for="zip">Zip Code <span class="zip-error">(Not a real zip code)</span></label>
+                    <input type="text" id="zip" name="zip" placeholder=" " pattern="[0-9]*" maxlength="5" required>
+                 </div>
+             
+                 <div class="phone">
+                     <label for="phone">Phone</label>
+                     <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
+                 </div>
+                 </div>
+            </fieldset>
+        </form>
+    </section>     
     <!--order summary-->     
          <section id="orderSummary">
              <article class="item">
@@ -60,67 +119,7 @@
              <!--button continue to shipping page-->
              <a href="shipping.html" class="btn-shipping">Continue to shipping</a>
          </section>
-    <!--personal details-->
-        <section id="info">
-            <form action="#" id="personalDetails">
-                <fieldset>
-                    <legend>Contact Information</legend>
-                    <!--email-->
-                    <div class="field-email">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" placeholder=" ">
-                    </div>
-                    <!--checkbox-->
-                    <div class="field-checkbox">
-                        <input type="checkbox" id="custom-checkbox" class="custom-checbox" checked>
-                        <span class="custom-checkbox-span" tabindex="0"></span>
-                        <label for="custom-checbox" class="custom-checkbox-label">Send me weekly exlusive offers</label>
-                    </div>
-                </fieldset>
-                <!--shipping information-->
-                <fieldset id="shipping-info">
-                    <legend>Shipping Information</legend>
-                    <div class="container">
-                    <div class="fullName">
-                       <input type="text" id="fullName" name="fullName" placeholder="Full Name" required size="60" autocomplete="off">
-                       <label for="firstName">Full Name:</label>
-                    </div>
-                     
-                     <div class="address">
-                        <label for="address">Address</label>
-                        <input type="text" id="address" name="address" placeholder=" " required size="60">
-                     </div>
-                         
-                     <div class="suite">
-                         <label for="suite">Apt \ Suite \ Other</label>
-                         <input type="text" id="suite" name="suite" placeholder=" ">
-                     </div>
-                     
-                     <div class="city">
-                         <label for="city">City</label>
-                         <input type="text" id="city" name="city" placeholder=" " required>
-                     </div>
-                     
-                     <div class="state">
-                         <label for="state">State</label>
-                         <input type="text" id="state" name="state" placeholder=" " required>
-                     </div>
-
-                     <div class="zip-code">
-                        <label for="zip">Zip Code <span class="zip-error">(Not a real zip code)</span></label>
-                        <input type="text" id="zip" name="zip" placeholder=" " pattern="[0-9]*" maxlength="5" required>
-                     </div>
-                 
-                     <div class="phone">
-                         <label for="phone">Phone</label>
-                         <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
-                     </div>
-                     </div>
-                </fieldset>
-
-            </form>
-        </section>
-
+    <!--end mainContent-->
      </div>    
     
     
