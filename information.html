@@ -23,10 +23,10 @@
 <!--navigation checkout stepper-->
     <nav class="checkoutStepper">
         <ul>
-            <li><a href="orderSummary.html">Cart</a></li>
+            <li><a href="cart.html">Cart</a></li>
             <li class="active"><a href="information.html"></a>Information</li>
-            <li><a href="shipping.html"></a>Shipping</li>
-            <li><a href="payment.html"></a>Payment</li>
+            <li><a href="shipping.html">Shipping</a></li>
+            <li><a href="payment.html">Payment</a></li>
         </ul>
     </nav>
 
@@ -35,30 +35,30 @@
     <!--order summary-->     
          <section id="orderSummary">
              <article class="item">
+                 <ul class="intro">
+                    <li class="title"><h1>Your Order</h1></li>
+                    <li class="edit"><a href="#"><button id="edit">Edit Cart</button></a></li>
+                 </ul>
                  <ul class="details">
-                     <li class="title"><h1>Your Order</h1></li>
-                     <li class="edit"><a href="#"><button id="edit">Edit Cart</button></a></li>
                      <li class="image"><img src="img/royal-canin-kitten.jpg" alt="Royal Canin Kitten" width="120px" height="100px"></li>
+                   
                      <li class="brandName"><h1>
                         Royal Canin Feline Health Nutrition Thin Slices in Gravy Wet Kitten Food, 3-oz, case of 24</h1></li>
+                     <div class="box">   
                      <li class="qty">
-                         <span>Qty:</span>
-                         <!--increment button-->
-                         <img src="img/cross-in-square.png" class="img-qty" onClick="increment()" alt="plus button"/>
-                         <input id="qty" type="number" min="1" max="50">
-                         <!--decrement button-->
-                         <img src="img/minus-in-square-outlined-interface-button.png" class="img-qty" onClick="decrement()" alt="minus button"/>
-                         <span>36.52$</span>
-                     </li>   
-
-                     <hr class="break">
-                     <li class="sub"><span>Subtotal:</span> <span>$36.52</span></li>   
-                     <li class="shipping"><span>Flat-Rate Shipping</span> <span>4.95$</span></li>
-                     <li class="tax"><span>Estimated Tax:</span> <span>$3.68</span></li>
-                     <hr class="break">
+                         <span>Qty: <span>36.52$</span>
+                     </li>  
+                     </div>
+                     <hr>
+                      <li class="sub"><span>Subtotal:</span> <span>$36.52</span></li>   
+                      <li class="shipping"><span>Flat-Rate Shipping:</span> <span>4.95$</span></li>
+                      <li class="tax"><span>Estimated Tax:</span> <span>$3.68</span></li>
+                     <hr>
                      <li class="total"><span>Order Total:</span> <span>$45.15</span></li>
                  </ul>
              </article>
+             <!--button continue to shipping page-->
+             <a href="shipping.html" class="btn-shipping">Continue to shipping</a>
          </section>
     <!--personal details-->
         <section id="info">
@@ -82,8 +82,8 @@
                     <legend>Shipping Information</legend>
                     <div class="container">
                     <div class="fullName">
-                       <label for="firstName">Full Name</label>
-                       <input type="text" id="fullName" name="fullName" placeholder=" " required size="60">
+                       <input type="text" id="fullName" name="fullName" placeholder="Full Name" required size="60" autocomplete="off">
+                       <label for="firstName">Full Name:</label>
                     </div>
                      
                      <div class="address">
@@ -118,8 +118,6 @@
                      </div>
                 </fieldset>
 
-                <!--button continue to shipping page-->
-                <a href="shipping.html" class="btn-shipping">Continue to shipping</a>
             </form>
         </section>
 

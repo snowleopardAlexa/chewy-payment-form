@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Lexend&display=swap');
 /* HEADER */
 /* allows to include the padding and border in an element's total width and height */
 * {
@@ -47,4 +48,68 @@ footer {
     text-align: center;
     color: #fff;
     font-size: 1rem;
+}
+
+/* NAVIGATION */
+.checkoutStepper {
+    margin-top: 25px;
+}
+
+.checkoutStepper ul {
+    list-style: none;
+    color: #131516;
+    font-family: 'Chewy', cursive;
+    width: 90%;
+    position: relative;
+    margin: 0 auto 1em;
+    display: flex;
+    justify-content: space-around;
+    counter-reset: step;
+}
+
+.checkoutStepper li {
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.checkoutStepper li:before {
+    content: counter(step);
+    counter-increment: step;
+    color: #ffffff;
+    border-radius: 50%;
+    background-color: #0f90db;
+    display: block;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    margin: auto;
+}
+
+/* line above the checkoutStepper */
+.checkoutStepper ul:after {
+    content: "";
+    width: 78%;
+    height: 3px;
+    background-color: #0f90db;
+    display: block;
+    position: absolute;
+    top: 27.5px;
+    z-index: -1;
+}
+
+.checkoutStepper li.active:before {
+    background-color: #17bacf;
+}
+
+.checkoutStepper a {
+    color: #666665;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding-top: 37px;
+}
+
+.checkoutStepper .active a {
+    color: grey;
 }
