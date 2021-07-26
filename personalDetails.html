@@ -54,13 +54,13 @@
                 <legend>Shipping Information</legend>
                 <div class="container">
                 <div class="fullName">
-                   <input type="text" id="fullName" name="fullName" placeholder="Full Name" required size="60" autocomplete="off">
-                   <label for="firstName">Full Name:</label>
+                    <label for="fullName">Full Name</label>
+                   <input type="text" id="fullName" name="fullName" placeholder="" required size="60">
                 </div>
                  
                  <div class="address">
                     <label for="address">Address</label>
-                    <input type="text" id="address" name="address" placeholder=" " required size="60">
+                    <input type="text" id="address" name="address" placeholder="">
                  </div>
                      
                  <div class="suite">
@@ -79,7 +79,7 @@
                  </div>
 
                  <div class="zip-code">
-                    <label for="zip">Zip Code <span class="zip-error">(Not a real zip code)</span></label>
+                    <label for="zip">Zip Code</label>
                     <input type="text" id="zip" name="zip" placeholder=" " pattern="[0-9]*" maxlength="5" required>
                  </div>
              
@@ -120,9 +120,19 @@
              <a href="shipping.html" class="btn-shipping">Continue to shipping</a>
          </section>
     <!--end mainContent-->
-     </div>    
+
+
+   
     
-    
+    <div class="container">
+        <div class="fullName"></div>
+        <div class="orderedProduct"></div>
+        <div class="subtotal"></div>
+        <div class="orderTotal"></div>
+        <div class="address"></div>
+        <div class="city"></div>
+      </div>
+
 
 
 

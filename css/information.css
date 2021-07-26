@@ -138,37 +138,7 @@ input {
 }
 
 /* grid form */
-.container {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "fullName fullName fullName"
-      "address address address"
-      "apt-suite-other apt-suite-other apt-suite-other"
-      "city state zip-code"
-      "phone phone phone";
-    width: 100%;
-    height: 100%;
-  }
-  
-  .fullName { grid-area: fullName; }
-  
-  .address { grid-area: address; }
-  
-  .apt-suite-other { grid-area: apt-suite-other; }
-  
-  .city { grid-area: city; }
-  
-  .state { grid-area: state; }
-  
-  .zip-code { grid-area: zip-code; }
-  
-  .phone { grid-area: phone; }
+
   
  .btn-shipping {
      margin-left: 8px;
@@ -183,39 +153,44 @@ input {
  }
 
 
-/* floating labels */
-.fullName {
-    position:  relative; 
-    margin-bottom:  10px; 
-}
-.label {
-      position:  absolute; 
-      top: calc(50% - 7px);
-      left:  0; 
-      opacity:  0; 
-      transition:  all .3s ease; 
-    }
-    input:not(:placeholder-shown) {
-      padding:  28px 0px 12px 0px; 
-    }
-    input:not(:placeholder-shown) + label {
-      transform:  translateY(-10px); 
-      opacity:  .7; 
-    }
+
+
+
+
+
+
+
 
 
   
-    form.go-right label {
-        top: 2px;
-        right: 100%;
-        width: 100%;
-        margin-right: -100%;
-        bottom: 2px;
-      }
-      form.go-right input:focus + label,
-      form.go-right textarea:focus + label {
-        right: 0;
-        margin-right: 0;
-        width: 40%;
-        padding-top: 5px;
-      }
+    
+
+ .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "fullName orderedProduct ."
+      "address subtotal ."
+      "city orderTotal ."
+      ". . ."
+      ". . .";
+    width: 100%;
+    height: 100%;
+  }
+  
+  .fullName { grid-area: fullName; }
+  
+  .orderedProduct { grid-area: orderedProduct; }
+  
+  .subtotal { grid-area: subtotal; }
+  
+  .orderTotal { grid-area: orderTotal; }
+  
+  .address { grid-area: address; }
+  
+  .city { grid-area: city; }
+  
