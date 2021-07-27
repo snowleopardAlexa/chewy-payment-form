@@ -1,5 +1,6 @@
   html {
     margin: 0;
+    color: #1e535f;
   }
 
   .shipping {
@@ -38,6 +39,10 @@ legend {
     font-weight: bold;
 }
 
+label {
+    font-size: 1.2rem;
+}
+
 #shippingMethod {
     margin-top: 20px;
 }
@@ -55,6 +60,7 @@ label {
 
 /* list */
 .details {
+    font-size: 1.2rem;
     list-style-type: none;
     display: inline-block;
 }
@@ -123,4 +129,71 @@ a {
  .btn-continue:hover, .btn-edit:hover {
     background-color: #0f90db;
 }
+
+/* CUSTOM RADIO BUTTONS */
+/* hide the default radio buttons */
+.customRadioBtn {
+    max-width: 505px;
+}
+.customRadioBtn input[type="radio"] { /* hide the default radio buttons, this will allow us to make our own */
+	position: absolute !important;
+	margin-left: -9999px !important;
+	visibility: hidden !important;
+}
+
+.customRadioBtn label.radioLabel { /* style the radio buttons labels */ 
+	display: flex; /* so we can position shipping price to far right */
+    margin-bottom: .5em;
+    position: relative;
+	padding-top: 4px;
+    padding-left: 30px;
+    letter-spacing: normal;
+    color: #1e535f;
+    font-size: 1.2rem;
+    border-bottom: solid 1px #cdf2f8;
+    padding-bottom: .5em;
+}
+
+/* the outer circles for the radio buttons */
+.customRadioBtn input+span { 
+	position: absolute;
+	left: 2px;
+	top: 4px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border: 2px solid #cdf2f8;
+	border-radius: 50%;
+}
+
+/* style the inner circles for the radio buttons (selected state) */
+.customRadioBtn input+span:after { 
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 0px;
+	height: 0px;
+	border-radius: 50%;
+	background-color: #16aec9;
+	transform: translate(-50%, -50%);
+	transition: 0.2s all;
+}
+
+.customRadioBtn strong { 
+    text-align: right;
+    margin-left: auto;
+}
+
+.customRadioBtn input:not(:checked)+span:after {
+	opacity: 0;
+}
+
+.customRadioBtn input:checked+span:after {
+	opacity: 1;
+	width: 10px;
+	height: 10px;
+}
+
+
 
