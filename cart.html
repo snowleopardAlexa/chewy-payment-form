@@ -43,8 +43,10 @@
        </nav>
 
        <div class="checkoutDetails">
+       <!--personal details-->    
         <div class="card">
-            <fieldset id="personalDetails">
+            <div id="personalDetails">
+                <fieldset>
                  <legend>Shipping Information</legend>
                  <form>
                      <div class="fullName fields--2">
@@ -52,6 +54,7 @@
                              <span class="firstName-label" for="firstName">First Name</span>
                              <input class="firstName-input" type="text" id="firstName" value="John"/>
                          </label>
+
                          <label class="lastName">
                              <span class="lastName-label" for="lastName">Last Name</span>
                              <input class="lastName-input" type="text" id="lastName" value="Doe" />
@@ -62,28 +65,33 @@
                          <span class="address-label" for="address">Address</span>
                          <input class="address-input" type="text" id="address" />
                      </label>
+
                      <label class="phone">
                         <span class="phone-label" for="tel">Phone</span>
                         <input class="phone-input" type="number" id="phone" />
                      </label>
+
                      <label class="zipcode">
                         <span class="zipcode-label" for="zipcode">Zipcode</span>
                         <input class="zipcode-input" type="number" id="zipcode" />
                      </label>
+
                      <label class="city">
                         <span class="city-label" for="tel">City</span>
                         <input class="city-input" type="text" id="city" />
                      </label>
+
                      <label class="state">
                         <span class="state-label" for="state">State</span>
                         <input class="state-input" type="text" id="state" />
                      </label>
                  </form>
-            </fieldset>
+                 </fieldset>
+                </div>
         </div>
         <div class="card">
-        <div class="orderSummary">
-        <!--order summary-->     
+        <!--order summary-->  
+        <div class="orderSummary">   
          <section id="orderSummary">
             <article class="item">
                 <ul class="details">
