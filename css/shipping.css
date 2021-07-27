@@ -21,6 +21,7 @@
 
   .shippingInfo, .totalCart {
       padding: 30px;
+      border: 1px solid #cdf2f8;
   }
 
   .shippingInfo ul {
