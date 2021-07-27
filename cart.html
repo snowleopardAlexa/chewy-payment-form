@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/information.css" />
     <title>Cart</title>
     <style>
-        
+
 .card {
-  background-color: dodgerblue;
-  color: white;
+
   padding: 1rem;
   height: 4rem;
 }
@@ -50,8 +50,33 @@
             </div>
         </div>
         <div class="card">
-            <div class="orderSummary">
-                TWO
+        <div class="orderSummary">
+        <!--order summary-->     
+         <section id="orderSummary">
+            <a href="editcart.html"><button id="edit">Edit Cart</button></a>
+            <article class="item" style="margin-top:50px;">
+                <ul class="details">
+                    <h1 class="title">Your Order</h1>
+                    <li><img src="img/royal-canin-kitten.jpg" class="image" alt="Royal Canin Kitten" width="120px" height="100px" style="margin: 0 auto;"></li>
+                  
+                    <li class="brandName"><h1>
+                       Royal Canin Feline Health Nutrition Thin Slices in Gravy Wet Kitten Food, 3-oz, case of 24</h1></li>
+                    <div class="box">   
+                    <li class="qty">
+                        <span>Qty: <span class="side-info">36.52$</span>
+                    </li>  
+                    </div>
+                    <hr>
+                     <li class="sub"><span>Subtotal:</span> <span class="side-info">$36.52</span></li>   
+                     <li class="shipping"><span>Flat-Rate Shipping:</span> <span class="side-info">4.95$</span></li>
+                     <li class="tax"><span>Estimated Tax:</span> <span class="side-info">$3.68</span></li>
+                    <hr>
+                    <li class="total"><span>Order Total:</span> <span class="side-info">$45.15</span></li>
+                </ul>
+            </article>
+            <!--button continue to shipping page-->
+            <a href="shipping.html" class="btn-shipping">Continue to shipping</a>
+        </section>
             </div>
         </div>
     

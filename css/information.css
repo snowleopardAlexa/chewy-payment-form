@@ -59,6 +59,16 @@
     font-size: 1.1rem;
 }
 
+.image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.side-info {
+    float: right;
+}
+
 /* increment and decrement btn */
 .img-qty {
    width: 22px;
