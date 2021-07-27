@@ -16,14 +16,7 @@
       list-style-type: none;
   }
 
-  .intro li {
-    display: inline-block;
-    list-style-type: none;
-}
 
-.intro .edit {
-    float: right;
-}
 
 .entireForm {
     padding: 50px;
@@ -36,23 +29,15 @@
          box-shadow: 0px 3px 6px 6px #ecf2f5;
 }
 
-.orderSummary {
-    margin: 0 auto;
-    padding: 50px;
-    border: 1px solid #cdf2f8;
-    max-width: 100%;
-}
-
-.personalDetails {
-    padding: 40px;
-    margin: 0 auto;
-    border: 1px solid #cdf2f8;
-    max-width: 100%;
-  }
 
 fieldset {
     border: none;
 }  
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
 
 #shippingMethod {
     margin-top: 20px;
@@ -60,25 +45,32 @@ fieldset {
 
 #shippingMethodType {
     margin-top: 20px;
-    display: block;
+}
+
+/* display labels in columns */
+#shippingMethodType {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding: 5px;
 }
 
 /* UL list */
 .details {
-    margin-top: 60px;
     list-style-type: none;
+    display: inline-block;
 }
 
-/* list elements */
-.title, .brandName, .qty, .edit, .sub, .total, .shipping, .tax {
-    font-family: 'Lexend', sans-serif;
-    margin-top: 10px;
+form {
+    display: grid;
 }
 
-.title {
-    margin-bottom: 20px;
-    font-size: 1.5rem;
-    font-weight: bold;
+
+
+.qty {
+    margin-top: 20px;
 }
 
 .qty, .sub, .shipping, .tax {
@@ -97,15 +89,13 @@ fieldset {
     float: right;
 }
 
-/* increment and decrement btn */
-.img-qty {
-   width: 22px;
-   height: 22px;
-}
+
 
 .total {
     font-size: 1.5rem;
     font-weight: bold;
+    font-family: 'Lexend', sans-serif;
+    margin-top: 10px;
 }
 
 
