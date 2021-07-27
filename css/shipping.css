@@ -1,9 +1,13 @@
+  html {
+    margin: 0;
+  }
+
   .shipping {
+    margin-left: 50px;
+  }
+  
+  .entireShippingForm {
     padding: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
     font-family: 'Lexend', sans-serif;
     max-width: 100%;
     margin: 0 auto;
@@ -16,27 +20,13 @@
   }
 
   .shippingInfo, .totalCart {
-      padding: 50px;
+      padding: 30px;
   }
 
   .shippingInfo ul {
       margin-top: 20px;
       list-style-type: none;
   }
-
-
-
-.entireForm {
-    padding: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    -webkit-box-shadow: 0 10px 6px 6px #ecf2f5;
-    -moz-box-shadow: 0 3px 6px 6px #ecf2f5;
-         box-shadow: 0px 3px 6px 6px #ecf2f5;
-}
-
 
 fieldset {
     border: none;
@@ -51,12 +41,9 @@ legend {
     margin-top: 20px;
 }
 
-#shippingMethodType {
-    margin-top: 20px;
-}
-
 /* display labels in columns */
 #shippingMethodType {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
 }
@@ -65,23 +52,14 @@ label {
     padding: 5px;
 }
 
-/* UL list */
+/* list */
 .details {
     list-style-type: none;
     display: inline-block;
 }
 
-form {
-    display: grid;
-}
-
-
-
 .qty {
     margin-top: 20px;
-}
-
-.qty, .sub, .shipping, .tax {
     font-size: 1.1rem;
 }
 
@@ -97,8 +75,7 @@ form {
     float: right;
 }
 
-
-
+/* order total price */
 .total {
     font-size: 1.5rem;
     font-weight: bold;
@@ -115,8 +92,9 @@ hr {
     margin-right: auto;
 }
 
-/* button edit */
+/* button edit and continue */
  .btn-continue, .btn-edit {
+     margin-top: 20px;
     padding: 0.35em 1.2em;
     font-size: 1.5rem;
     text-decoration: none;
@@ -140,6 +118,8 @@ a {
     font-size: 1rem;
 }
 
+/* hover */
  .btn-continue:hover, .btn-edit:hover {
     background-color: #0f90db;
 }
+
