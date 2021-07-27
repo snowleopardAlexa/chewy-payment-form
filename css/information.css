@@ -89,11 +89,14 @@
     box-sizing: none;
     background-color: rgb(22, 174, 201);
     color: #ffffff;
-    font-size: 1.2rem;
     font-family: 'Chewy', cursive;
     text-align: center;
     transition: all 0.2s;
     text-decoration: none;
+}
+
+#edit {
+    font-size: 1.2rem;
 }
 
 #edit:hover, .btn-shipping:hover {
@@ -101,7 +104,8 @@
 }
 
 .btn-shipping {
-  margin-top: 20px;
+  font-size: 1.5rem;  
+  margin-top: 40px;
   display: block;
 }
 
