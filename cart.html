@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" />
     <title>Cart</title>
+    <style>
+        
+.card {
+  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 4rem;
+}
+
+.checkoutDetails {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+    </style>
 </head>
 <body>
         <!--hero display header-->    
@@ -23,5 +42,20 @@
                <li><a href="payment.html">Payment</a></li>
            </ul>
        </nav>
+
+       <div class="checkoutDetails">
+        <div class="card">
+            <div class="personalDetails">
+                ONE
+            </div>
+        </div>
+        <div class="card">
+            <div class="orderSummary">
+                TWO
+            </div>
+        </div>
+    
+      </div>
+     
 </body>
 </html>
