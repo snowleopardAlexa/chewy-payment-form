@@ -1,9 +1,19 @@
 /* MAIN CONTENT */
 
 .cart {
-    padding: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px; 
+    padding: 50px;
     max-width: 70%;
     margin: 0 auto;
+    -webkit-box-shadow: 0 10px 6px 6px #ecf2f5;
+    -moz-box-shadow: 0 3px 6px 6px #ecf2f5;
+         box-shadow: 0px 3px 6px 6px #ecf2f5;
+  }
+
+  #remove-item {
+      font-size: 1.5rem;
+      color: #16aec9;
   }
   
   .checkoutDetails {
