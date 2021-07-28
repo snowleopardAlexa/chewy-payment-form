@@ -1,7 +1,9 @@
 /* MAIN CONTENT */
 
-.card {
-    padding: 1rem;
+.cart {
+    padding: 100px;
+    max-width: 70%;
+    margin: 0 auto;
   }
   
   .checkoutDetails {
@@ -44,22 +46,14 @@ html {
     float: right;
 }
 
-.entireForm {
-    padding: 50px;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    -webkit-box-shadow: 0 10px 6px 6px #ecf2f5;
-    -moz-box-shadow: 0 3px 6px 6px #ecf2f5;
-         box-shadow: 0px 3px 6px 6px #ecf2f5;
-}
-
 .orderSummary {
     margin: 0 auto;
     padding: 50px;
     border: 1px solid #cdf2f8;
     max-width: 100%;
+    -webkit-box-shadow: 0 10px 6px 6px #ecf2f5;
+    -moz-box-shadow: 0 3px 6px 6px #ecf2f5;
+         box-shadow: 0px 3px 6px 6px #ecf2f5;
 }
 
 .personalDetails {
