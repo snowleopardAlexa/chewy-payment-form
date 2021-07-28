@@ -10,7 +10,7 @@
          box-shadow: 0px 3px 6px 6px #ecf2f5;
   }
 
-  #remove-item {
+  .remove-item {
       font-size: 1.2rem;
       color: #16aec9;
       font-weight: bold;
@@ -123,7 +123,9 @@ html {
 }
 
 /* button edit */
-#edit, .btn-shipping {
+.btn-personal-details, .btn-add-items {
+    font-size: 1.5rem;  
+    display: block;
     padding: 0.35em 1.2em;
     border: 0.1em solid #ffffff;
     border-radius: 0.12em;
@@ -136,18 +138,16 @@ html {
     text-decoration: none;
 }
 
-#edit {
-    font-size: 1.2rem;
+.btn-personal-details {
+    margin-top: 10px;
 }
 
-#edit:hover, .btn-shipping:hover {
+.btn-add-items {
+    margin-top: 50px;
+}
+
+.btn-add-items:hover, .btn-personal-details:hover {
     background-color: #0f90db;
-}
-
-.btn-shipping {
-  font-size: 1.5rem;  
-  margin-top: 40px;
-  display: block;
 }
 
 hr {
