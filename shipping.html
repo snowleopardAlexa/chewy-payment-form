@@ -41,8 +41,29 @@
                <span>+1 345-567-7654</span>
            </li>
        </ul>
+    <!--form shipping methods-->
+    <form action="#" id="shippingMethod">
+        <fieldset>
+            <legend>Shipping method</legend>
+            <div id="shippingMethodType" class="shippingMethodType">
+                <label for="free" class="customRadio">
+                    <input type="radio" id="free" name="shippingOption" value="0.00" checked>
+                    <span></span>Free shipping (3-7 days) <strong>Free</strong>
+                </label>
+                <label for="SecondDay" class="customRadio">
+                    <input type="radio" id="free" name="shippingOption" value="7.99">
+                    <span></span>Second day shipping (3 days) <strong>$7.99</strong>
+                </label>
+                <label for="nextDay" class="customRadio">
+                    <input type="radio" id="nextDay" name="shippingOption" value="21.99">
+                    <span></span>Next day shipping (2 days) <strong>$21.99</strong>
+                </label>
+            </div>
+        </fieldset>
+    </form>
     </div>
-    <div class="totalCart">
+
+ <div class="totalCart">
   <h2>Cart Total</h2>
   <span class="side-info">
     <a href="editcart.html"><button id="edit">Edit Cart</button></a>

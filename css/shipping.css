@@ -50,6 +50,19 @@
     max-width: 100%;
   }
 
+fieldset {
+    border: none;
+}  
+
+#shippingMethod {
+    margin-top: 20px;
+}
+
+#shippingMethodType {
+    margin-top: 20px;
+    display: block;
+}
+
 /* UL list */
 .details {
     margin-top: 60px;
