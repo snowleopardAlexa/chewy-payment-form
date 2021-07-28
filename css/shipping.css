@@ -1,5 +1,5 @@
-
   .shipping {
+    font-family: 'Lexend', sans-serif;
     max-width: 100%;
     margin: 0 auto;
     display: grid;
@@ -7,6 +7,11 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 
-  h2 {
-      border: 1px solid red;
+  .shippingInfo, .totalCart {
+      padding: 50px;
+  }
+
+  .shippingInfo ul {
+      margin-top: 20px;
+      list-style-type: none;
   }
