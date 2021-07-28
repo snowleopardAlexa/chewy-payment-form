@@ -16,6 +16,31 @@
       color: #16aec9;
   }
 
+  fieldset {
+      border: none;
+  }
+
+  fieldset, input[type=button] {
+      border: 0;
+  }
+
+  input[type="button"] {
+      background-color: #16aec9;
+      color: #fff;
+      cursor: pointer;
+      width: 24px;
+      height: 24px;
+  }
+
+  input[type="text"] {
+      border: 1px solid #16aec9;
+      height: 22px;
+      width: 50px;
+  }
+
+  legend {
+      margin-top: 20px;
+  }
 
 *,
 *:before,
