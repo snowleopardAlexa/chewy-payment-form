@@ -11,6 +11,9 @@
   }
 
   .remove-item {
+      border: none;
+      cursor: pointer;
+      background: none;
       font-size: 1.2rem;
       color: #16aec9;
       font-weight: bold;
