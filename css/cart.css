@@ -16,6 +16,10 @@
       color: #16aec9;
   }
 
+  .quantity-buttons {
+      margin-top: 10px;
+  }
+
   fieldset {
       border: none;
   }
@@ -33,13 +37,15 @@
   }
 
   input[type="text"] {
+      text-align: center;
+      color: #1e535f;
       border: 1px solid #16aec9;
       height: 22px;
       width: 50px;
   }
 
   legend {
-      margin-top: 20px;
+      margin-bottom: 5px;
   }
 
 *,
