@@ -1,4 +1,8 @@
 /* MAIN CONTENT */
+
+html {
+    color: #1e535f;
+}
 /* ORDER SUMMARY */
 .intro li {
     display: inline-block;
@@ -154,6 +158,7 @@ hr {
   }
   .subtitle-form {
       margin-top: 11px;
+      color: #16aec9;
   }
 
   .checkbox-text {
