@@ -4,203 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chewy Payment Form</title>
-    <link re="stylesheet" href="html5-reset-stylesheet" />
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/information.css">
-    <!--Chewy google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Lexend&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/information.css" />
+    <title>Cart</title>
+    <style>
+
+.card {
+  padding: 1rem;
+}
+
+.checkoutDetails {
+  max-width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+
+    </style>
 </head>
-<body id="cart">
-<!--hero display header-->    
-    <header>
-         <h1 id="header-title">Chewy</h1>
-         <h3 id="header-subtitle">Payment Form</h3>
-    </header>   
+<body>
+        <!--hero display header-->    
+        <header>
+            <h1 id="header-title">Chewy</h1>
+            <h3 id="header-subtitle">Payment Form</h3>
+       </header>   
+    
+    <!--navigation checkout stepper-->
+       <nav class="checkoutStepper">
+           <ul>
+               <li class="active"><a href="cart.html">Cart</a></li>
+               <li><a href="personalDetails.html">Information</a></li>
+               <li><a href="shipping.html">Shipping</a></li>
+               <li><a href="payment.html">Payment</a></li>
+           </ul>
+       </nav>
 
-<!--navigation checkout stepper-->
-    <nav class="checkoutStepper">
-        <ul>
-            <li><a href="cart.html">Cart</a></li>
-            <li class="active"><a href="information.html"></a>Information</li>
-            <li><a href="shipping.html">Shipping</a></li>
-            <li><a href="payment.html">Payment</a></li>
-        </ul>
-    </nav>
-
-<!--section main content-->
-     <div class="mainContent">
-     <!--personal details-->
-     <section id="info">
-        <form action="#" id="personalDetails">
-            <fieldset>
-                <legend>Contact Information</legend>
-                <!--email-->
-                <div class="field-email">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder=" ">
+       <div class="entireForm">
+       <div class="checkoutDetails">
+       <!--personal details-->    
+        <div class="card">
+            <div class="personalDetails">
+                <h1 class="title-form">Contact Information</h1>
+                <div class="form">
+                    <label class="field">
+                        <span class="field-label" for="email">Email</span>
+                        <input class="field-input" type="text" id="email" />
+                      </label>
+                      <span class="checkbox-text">Checkbox:  Keep me up to date on news and exclusive offers</span>
                 </div>
-                <!--checkbox-->
-                <div class="field-checkbox">
-                    <input type="checkbox" id="custom-checkbox" class="custom-checbox" checked>
-                    <span class="custom-checkbox-span" tabindex="0"></span>
-                    <label for="custom-checbox" class="custom-checkbox-label">Send me weekly exlusive offers</label>
+                <h1 class="title-form">Personal Information</h1>
+                <p class="subtitle-form">Please enter your personal details.</p>
+                    <div class="form">
+                    <div class="fields fields-2">
+                      <label class="field">
+                        <span class="field-label" for="firstname">First name</span>
+                        <input class="field-input" type="text" id="firstname" />
+                      </label>
+                      <label class="field">
+                        <span class="field-label" for="lastname">Last name</span>
+                        <input class="field-input" type="text" id="lastname" />
+                      </label>
+                    </div>
+                    <label class="field">
+                      <span class="field-label" for="address">Address</span>
+                      <input class="field-input" type="text" id="address" />
+                    </label>
+                    <label class="field">
+                      <span class="field-label" for="tel">Phone</span>
+                      <select class="field-input" id="phone">
+                      </select>
+                    </label>
+                    <div class="fields fields-3">
+                      <label class="field">
+                        <span class="field-label" for="zipcode">Zip code</span>
+                        <input class="field-input" type="text" id="zipcode" />
+                      </label>
+                      <label class="field">
+                        <span class="field-label" for="city">City</span>
+                        <input class="field-input" type="text" id="city" />
+                      </label>
+                      <label class="field">
+                        <span class="field-label" for="state">State</span>
+                        <select class="field-input" id="state">
+                          <option value=""></option>
+                        </select>
+                      </label>
+                    </div>
+                 </div>
                 </div>
-            </fieldset>
-            <!--shipping information
-            <fieldset id="shipping-info">
-                <legend>Shipping Information</legend>
-                <div class="container">
-                <div class="fullName">
-                    <label for="fullName">Full Name</label>
-                   <input type="text" id="fullName" name="fullName" placeholder="" required size="60">
-                </div>
-                 
-                 <div class="address">
-                    <label for="address">Address</label>
-                    <input type="text" id="address" name="address" placeholder="">
-                 </div>
-                     
-                 <div class="suite">
-                     <label for="suite">Apt \ Suite \ Other</label>
-                     <input type="text" id="suite" name="suite" placeholder=" ">
-                 </div>
-                 
-                 <div class="city">
-                     <label for="city">City</label>
-                     <input type="text" id="city" name="city" placeholder=" " required>
-                 </div>
-                 
-                 <div class="state">
-                     <label for="state">State</label>
-                     <input type="text" id="state" name="state" placeholder=" " required>
-                 </div>
-
-                 <div class="zip-code">
-                    <label for="zip">Zip Code</label>
-                    <input type="text" id="zip" name="zip" placeholder=" " pattern="[0-9]*" maxlength="5" required>
-                 </div>
-             
-                 <div class="phone">
-                     <label for="phone">Phone</label>
-                     <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
-                 </div>
-                 </div>
-            </fieldset>
-        </form>
-    </section>     -->
-   
-
-    <div class="container">
-        <div class="fullName">
-            <div class="phone">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
             </div>
-        </div>
-        <div class="orderedProduct">
-            <div class="phone">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
-            </div>
-        </div>
-        <div class="subtotal">
-            <div class="phone">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
-            </div>
-        </div>
-        <div class="orderTotal">
-            <div class="phone">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
-            </div>
-        </div>
-        <div class="address">
-            <div class="phone">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
-            </div>
-        </div>
-        <div class="city">
-            <div class="phone">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
-            </div>
-        </div>
-        <div class="state">
-            <div class="phone">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
-            </div>
-        </div>
-        <div class="apt-suite-other">
-            <div class="phone">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
-            </div>
-        </div>
-        <div class="zip-code">
-            <div class="phone">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
-            </div>
-        </div>
-        <div class="phone">
-            <div class="phone">
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone" name="phone" placeholder=" " required size="60">
-            </div>
-        </div>
-      </div>
-       
- 
-         
-    <!--order summary-->     
+        <div class="card">
+        <!--order summary-->  
+        <div class="orderSummary">   
          <section id="orderSummary">
-             <article class="item">
-                 <ul class="intro">
-                    <li class="title"><h1>Your Order</h1></li>
-                    <li class="edit"><a href="#"><button id="edit">Edit Cart</button></a></li>
-                 </ul>
-                 <ul class="details">
-                     <li class="image"><img src="img/royal-canin-kitten.jpg" alt="Royal Canin Kitten" width="120px" height="100px"></li>
-                   
-                     <li class="brandName"><h1>
-                        Royal Canin Feline Health Nutrition Thin Slices in Gravy Wet Kitten Food, 3-oz, case of 24</h1></li>
-                     <div class="box">   
-                     <li class="qty">
-                         <span>Qty: <span>36.52$</span>
-                     </li>  
-                     </div>
-                     <hr>
-                      <li class="sub"><span>Subtotal:</span> <span>$36.52</span></li>   
-                      <li class="shipping"><span>Flat-Rate Shipping:</span> <span>4.95$</span></li>
-                      <li class="tax"><span>Estimated Tax:</span> <span>$3.68</span></li>
-                     <hr>
-                     <li class="total"><span>Order Total:</span> <span>$45.15</span></li>
-                 </ul>
-             </article>
+            <article class="item">
+                <ul class="details">
+                    <h1 class="title">Your Order
+                        <span class="side-info">
+                            <a href="editcart.html"><button id="edit">Edit Cart</button></a>
+                        </span>
+                    </h1>
+                    <li><img src="img/royal-canin-kitten.jpg" class="image" alt="Royal Canin Kitten"></li>
+                  
+                    <li class="brandName"><h1>
+                       Royal Canin Feline Health Nutrition Thin Slices in Gravy Wet Kitten Food, 3-oz, case of 24</h1></li>
+                    <div class="box">   
+                    <li class="qty">
+                        <span>Qty: <span class="side-info">36.52$</span>
+                    </li>  
+                    </div>
+                    <hr>
+                     <li class="sub"><span>Subtotal:</span> <span class="side-info">$36.52</span></li>   
+                     <li class="shipping"><span>Flat-Rate Shipping:</span> <span class="side-info">4.95$</span></li>
+                     <li class="tax"><span>Estimated Tax:</span> <span class="side-info">$3.68</span></li>
+                    <hr>
+                    <li class="total"><span>Order Total:</span> <span class="side-info">$45.15</span></li>
+                </ul>
+            </article>
+          </section>
+            </div>
+        </div>
+       </div>
              <!--button continue to shipping page-->
              <a href="shipping.html" class="btn-shipping">Continue to shipping</a>
-         </section>
-    <!--end mainContent-->
-
+      </div>
 
    
+
+
+<!--hero display footer-->
+<footer>
+    <h1 id="footer-title">Chewy</h1>
+    <h3 id="footer-subtitle">with love to pets</h3> 
+</footer>
+
+     
+</body>
+</html>
     
 
 
 
 
 
-<!--hero display footer-->
-    <footer>
-          <h1 id="footer-title">Chewy</h1>
-          <h3 id="footer-subtitle">with love to pets</h3> 
-    </footer>
+
+
+    <!---
     <script>
         // increment and decrement the quantity of the order
         function increment() {
@@ -217,7 +168,7 @@
         e.target.value = !x[2] ? x[1] : '(' + x[1] + ') ' + x[2] + (x[3] ? '-' + x[3] : '');
         });
 
-        // add zip-code validation
+        // add zip-code validation-->
 
 
     </script>
