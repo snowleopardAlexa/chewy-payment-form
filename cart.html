@@ -42,9 +42,9 @@
                     <div class="quantity-buttons">
                         <fieldset>
                             <legend>Qty:</legend>
-                            <input type="button" value="-" class="decrement" />
+                            <input type="button" value="-" class="decrease" />
                             <input type="text" id="ten-max" value="0" />
-                            <input type="button" value="+" class="increment" />
+                            <input type="button" value="+" class="increase" />
                             <span class="side-info">36.52$</span>
                         </fieldset>
                     </div>
@@ -66,5 +66,31 @@
     <h1 id="footer-title">Chewy</h1>
     <h3 id="footer-subtitle">with love to pets</h3> 
 </footer>   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script>
+// Custom decrement and increment input type text
+$(function () {
+set_($('#ten-max'), 10);  //return 9 maximum digites
+
+function set_(_this, max) {
+    var block = _this.parent();
+
+    block.find(".increase").click(function () {
+        var currentVal = parseInt(_this.val());
+        if (currentVal != NaN && (currentVal + 1) <= max) {
+            _this.val(currentVal + 1);
+        }
+    });
+
+    block.find(".decrease").click(function () {
+        var currentVal = parseInt(_this.val());
+        if (currentVal != NaN && currentVal != 0) {
+            _this.val(currentVal - 1);
+        }
+    });
+}
+});
+</script>
+
 </body>
 </html>
