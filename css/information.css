@@ -10,12 +10,15 @@
 }
 
 .entireForm {
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     -webkit-box-shadow: 0 10px 6px 6px #ecf2f5;
     -moz-box-shadow: 0 3px 6px 6px #ecf2f5;
          box-shadow: 0px 3px 6px 6px #ecf2f5;
 }
 
-#orderSummary {
+.orderSummary {
     margin: 0 auto;
     padding: 50px;
     border: 1px solid #6460601e;
@@ -25,7 +28,7 @@
          box-shadow: 0px 3px 6px 6px #ecf2f5;
 }
 
-#personalDetails {
+.personalDetails {
     margin: 0 auto;
     padding: 50px;
     border: 1px solid #6460601e;
@@ -87,7 +90,7 @@
     border: 0.1em solid #ffffff;
     border-radius: 0.12em;
     box-sizing: none;
-    background-color: rgb(22, 174, 201);
+    background-color: #16aec9;
     color: #ffffff;
     font-family: 'Chewy', cursive;
     text-align: center;
@@ -120,8 +123,8 @@ hr {
 /* SHIPPING INFORMATION */
 /* FORM */
 :root {
-    --color-gray: #737888;
-    --color-lighter-gray: #e3e5ed;
+    --color-blue: #0f90db;
+    --color-lighter-blue: #16aec9;
     --color-light-gray: #f7f7fa;
   }
   
@@ -143,17 +146,25 @@ hr {
     }
   }
 
-  
-  h1 {
-    margin-bottom: 1rem;
-  }
-  
   .personalDetails {
     padding: 40px;
     margin: 0 auto;
   }
+
+  .title-form {
+      margin-top: 25px;
+      font-size: 1.5rem;
+  }
+  .subtitle-form {
+      margin-top: 11px;
+  }
+
+  .checkbox-text {
+      color: #16aec9;
+  }
   
   .form {
+    margin-top: 30px;
     display: grid;
     grid-gap: 1rem;
   }
@@ -162,13 +173,13 @@ hr {
     width: 100%;
     display: flex;
     flex-direction: column;
-    border: 1px solid var(--color-lighter-gray);
+    border: 1px solid var(--color-lighter-blue);
     padding: .5rem;
     border-radius: .25rem;
   }
   
   .field-label {
-    color: var(--color-gray);
+    color: var(--color-blue);
     font-size: 0.6rem;
     font-weight: 300;
     text-transform: uppercase;
