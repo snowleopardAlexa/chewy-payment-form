@@ -1,8 +1,27 @@
 /* MAIN CONTENT */
 
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  font-family: 'Lexend', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Lexend', sans-serif;
+  }
+}
+
 html {
     color: #1e535f;
 }
+
 /* ORDER SUMMARY */
 .intro li {
     display: inline-block;
@@ -28,16 +47,15 @@ html {
     margin: 0 auto;
     padding: 50px;
     border: 1px solid #cdf2f8;
-    max-width: 90%;
-   
+    max-width: 100%;
 }
 
 .personalDetails {
+    padding: 40px;
     margin: 0 auto;
-    padding: 50px;
     border: 1px solid #cdf2f8;
-    max-width: 90%;
-}
+    max-width: 100%;
+  }
 
 /* UL list */
 .details {
@@ -114,7 +132,7 @@ html {
 }
 
 hr {
-    border: 1px solid rgba(138, 132, 132, 0.116);
+    border: 1px solid #cdf2f8;
     margin-top: 20px;
     width: 100%; 
     margin-left: auto;
@@ -127,29 +145,6 @@ hr {
     --color-blue: #0f90db;
     --color-lighter-blue: #16aec9;
     --color-light-gray: #f7f7fa;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  html {
-    font-family: 'Lexend', sans-serif;
-    font-size: 14px;
-    box-sizing: border-box;
-  }
-  
-  @supports (font-variation-settings: normal) {
-    html {
-      font-family: 'Lexend', sans-serif;
-    }
-  }
-
-  .personalDetails {
-    padding: 40px;
-    margin: 0 auto;
   }
 
   .title-form {
