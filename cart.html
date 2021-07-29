@@ -41,56 +41,53 @@
            </ul>
        </nav>
 
+       <div class="entireForm">
        <div class="checkoutDetails">
        <!--personal details-->    
         <div class="card">
-            <div id="personalDetails">
-                <fieldset>
-                 <legend>Personal Information</legend>
-                 <form>
-                     <div class="fields fields-2">
-                         <label class="field">
-                             <span class="field-label" for="firstName">First Name</span>
-                             <input class="field-input" type="text" id="firstName" />
-                         </label>
-
-                         <label class="field">
-                             <span class="field-label" for="lastName">Last Name</span>
-                             <input class="field-input" type="text" id="lastName" />
-                         </label>
-                     </div>
-
-                     <label class="field">
-                        <span class="field-label" for="address">Address</span>
-                        <input class="field-input" type="text" id="address" />
-                    </label>
-
-                     <label class="field">
-                        <span class="field-label" for="tel">Phone</span>
-                        <input class="field-input" type="number" id="phone" />
-                     </label>
-
-                   <div class="fields fields-3">
+            <div class="personalDetails">
+                    <h1>Personal Information</h1>
+                    <div class="form">
+                    <div class="fields fields-2">
+                      <label class="field">
+                        <span class="field-label" for="firstname">First name</span>
+                        <input class="field-input" type="text" id="firstname" />
+                      </label>
+                      <label class="field">
+                        <span class="field-label" for="lastname">Last name</span>
+                        <input class="field-input" type="text" id="lastname" />
+                      </label>
+                    </div>
                     <label class="field">
-                        <span class="field-label" for="zipcode">Zipcode</span>
-                        <input class="field-input" type="number" id="zipcode" />
-                     </label>
-
-                     <label class="field">
-                        <span class="field-label" for="tel">City</span>
+                      <span class="field-label" for="address">Address</span>
+                      <input class="field-input" type="text" id="address" />
+                    </label>
+                    <label class="field">
+                      <span class="field-label" for="country">Country</span>
+                      <select class="field-input" id="country">
+                        <option value=""></option>
+                        <option value="unitedstates">United States</option>
+                      </select>
+                    </label>
+                    <div class="fields fields-3">
+                      <label class="field">
+                        <span class="field-label" for="zipcode">Zip code</span>
+                        <input class="field-input" type="text" id="zipcode" />
+                      </label>
+                      <label class="field">
+                        <span class="field-label" for="city">City</span>
                         <input class="field-input" type="text" id="city" />
-                     </label>
-
-                     <label class="field">
+                      </label>
+                      <label class="field">
                         <span class="field-label" for="state">State</span>
-                        <input class="field-input" type="text" id="state" />
-                     </label>
-                   </div>
-                 
-                 </form>
-                 </fieldset>
-                </div>
-        </div>
+                        <select class="field-input" id="state">
+                          <option value=""></option>
+                        </select>
+                      </label>
+                    </div>
+                    </div>
+                  </div>
+            </div>
         <div class="card">
         <!--order summary-->  
         <div class="orderSummary">   
@@ -124,7 +121,7 @@
         </section>
             </div>
         </div>
-    
+       </div>
       </div>
      
 </body>
