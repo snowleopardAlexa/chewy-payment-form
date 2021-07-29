@@ -1,5 +1,17 @@
 /* MAIN CONTENT */
 
+.card {
+    padding: 1rem;
+  }
+  
+  .checkoutDetails {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
 *,
 *:before,
 *:after {

@@ -104,12 +104,12 @@ footer {
 }
 
 .checkoutStepper a {
-    color: #666665;
+    color: #0f90db;
     text-decoration: none;
     font-size: 1.2em;
     padding-top: 37px;
 }
 
 .checkoutStepper .active a {
-    color: grey;
+    color: #17bacf;
 }
