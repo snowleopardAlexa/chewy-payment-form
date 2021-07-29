@@ -5,27 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/information.css" />
-    <title>Cart</title>
-    <style>
-
-.card {
-  padding: 1rem;
-}
-
-.checkoutDetails {
-  max-width: 100%;
-  margin: 0 auto;
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
-
-
-    </style>
+    <link rel="stylesheet" href="css/payment.css" />
+    <title>Cart Summary</title>
 </head>
 <body>
-        <!--hero display header-->    
+        <!--header-->    
         <header>
             <h1 id="header-title">Chewy</h1>
             <h3 id="header-subtitle">Payment Form</h3>
@@ -35,101 +19,17 @@
        <nav class="checkoutStepper">
            <ul>
                <li><a href="cart.html">Cart</a></li>
-               <li class="active"><a href="personalDetails.html">Information</a></li>
+               <li><a href="information.html">Information</a></li>
                <li><a href="shipping.html">Shipping</a></li>
-               <li><a href="payment.html">Payment</a></li>
+               <li class="active"><a href="payment.html">Payment</a></li>
            </ul>
        </nav>
 
-       <div class="entireForm">
-       <div class="checkoutDetails">
-       <!--personal details-->    
-        <div class="card">
-            <div class="personalDetails">
-                <h1 class="title-form">Contact Information</h1>
-                <div class="form">
-                    <label class="field">
-                        <span class="field-label" for="email">Email</span>
-                        <input class="field-input" type="text" id="email" />
-                      </label>
-                      <span class="checkbox-text">Checkbox:  Keep me up to date on news and exclusive offers</span>
-                </div>
-                <h1 class="title-form">Personal Information</h1>
-                <p class="subtitle-form">Please enter your personal details.</p>
-                    <div class="form">
-                    <div class="fields fields-2">
-                      <label class="field">
-                        <span class="field-label" for="firstname">First name</span>
-                        <input class="field-input" type="text" id="firstname" />
-                      </label>
-                      <label class="field">
-                        <span class="field-label" for="lastname">Last name</span>
-                        <input class="field-input" type="text" id="lastname" />
-                      </label>
-                    </div>
-                    <label class="field">
-                      <span class="field-label" for="address">Address</span>
-                      <input class="field-input" type="text" id="address" />
-                    </label>
-                    <label class="field">
-                      <span class="field-label" for="tel">Phone</span>
-                      <select class="field-input" id="phone">
-                      </select>
-                    </label>
-                    <div class="fields fields-3">
-                      <label class="field">
-                        <span class="field-label" for="zipcode">Zip code</span>
-                        <input class="field-input" type="text" id="zipcode" />
-                      </label>
-                      <label class="field">
-                        <span class="field-label" for="city">City</span>
-                        <input class="field-input" type="text" id="city" />
-                      </label>
-                      <label class="field">
-                        <span class="field-label" for="state">State</span>
-                        <select class="field-input" id="state">
-                          <option value=""></option>
-                        </select>
-                      </label>
-                    </div>
-                 </div>
-                </div>
-            </div>
-        <div class="card">
-        <!--order summary-->  
-        <div class="orderSummary">   
-         <section id="orderSummary">
-            <article class="item">
-                <ul class="details">
-                    <h1 class="title">Your Order
-                        <span class="side-info">
-                            <a href="editcart.html"><button id="edit">Edit Cart</button></a>
-                        </span>
-                    </h1>
-                    <li><img src="img/royal-canin-kitten.jpg" class="image" alt="Royal Canin Kitten"></li>
-                  
-                    <li class="brandName"><h1>
-                       Royal Canin Feline Health Nutrition Thin Slices in Gravy Wet Kitten Food, 3-oz, case of 24</h1></li>
-                    <div class="box">   
-                    <li class="qty">
-                        <span>Qty: <span class="side-info">36.52$</span>
-                    </li>  
-                    </div>
-                    <hr>
-                     <li class="sub"><span>Subtotal:</span> <span class="side-info">$36.52</span></li>   
-                     <li class="shipping"><span>Flat-Rate Shipping:</span> <span class="side-info">4.95$</span></li>
-                     <li class="tax"><span>Estimated Tax:</span> <span class="side-info">$3.68</span></li>
-                    <hr>
-                    <li class="total"><span>Order Total:</span> <span class="side-info">$45.15</span></li>
-                </ul>
-            </article>
-          </section>
-            </div>
-        </div>
-       </div>
-             <!--button continue to shipping page-->
-             <a href="shipping.html" class="btn-shipping">Continue to shipping</a>
-      </div>
-     
+
+ <!--footer-->
+<footer>
+    <h1 id="footer-title">Chewy</h1>
+    <h3 id="footer-subtitle">with love to pets</h3> 
+</footer>   
 </body>
 </html>
