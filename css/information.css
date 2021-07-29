@@ -23,7 +23,7 @@
 .orderSummary {
     margin: 0 auto;
     padding: 50px;
-    border: 1px solid #6460601e;
+    border: 1px solid #cdf2f8;
     max-width: 90%;
    
 }
@@ -31,9 +31,8 @@
 .personalDetails {
     margin: 0 auto;
     padding: 50px;
-    border: 1px solid #6460601e;
+    border: 1px solid #cdf2f8;
     max-width: 90%;
-  
 }
 
 /* UL list */
