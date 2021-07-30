@@ -221,6 +221,7 @@ a {
 
    /* cards image */
    .cards-img {
+    margin-top: 5px;
     width: 40px;
     height: 40px;
 
