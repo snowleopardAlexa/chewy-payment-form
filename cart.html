@@ -6,24 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/cart.css" />
-    <title>Cart Summary</title>
+    <title>Cart</title>
 </head>
 <body>
-        <!--header-->    
-        <header>
-            <h1 id="header-title">Chewy</h1>
-            <h3 id="header-subtitle">Payment Form</h3>
-       </header>   
-    
-    <!--navigation checkout stepper-->
-       <nav class="checkoutStepper">
-           <ul>
-               <li class="active"><a href="cart.html">Cart</a></li>
-               <li><a href="personalDetails.html">Information</a></li>
-               <li><a href="shipping.html">Shipping</a></li>
-               <li><a href="orderSummary.html">Payment</a></li>
-           </ul>
-       </nav>
+<!--header-->    
+<header>
+    <h1 id="header-title">Chewy</h1>
+    <h3 id="header-subtitle">Payment Form</h3>
+</header>   
+
+<!--navigation checkout stepper-->
+<nav class="checkoutStepper">
+    <ul>
+        <li class="active"><a href="cart.html">Cart</a></li>
+        <li><a href="personalDetails.html">Personal Details</a></li>
+        <li><a href="shipping.html">Shipping</a></li>
+        <li><a href="orderSummary.html">Payment</a></li>
+    </ul>
+</nav>
 
 <!--cart-->
 <div class="cart" style="margin-top: 50px;">
@@ -31,41 +31,40 @@
         <article class="item">
             <ul class="details">
                 <h1 class="title">Your Cart</h1>
-                <span class="side-info">
-                    <button class="remove-item">Remove</button>
+                <span class="remove-btn-position">
+                    <button class="remove-item-btn">Remove</button>
                 </span>
-                <li><img src="img/royal-canin-kitten.jpg" class="image" alt="Royal Canin Kitten"></li>
+                <li><img src="img/royal-canin-kitten.jpg" class="img-item" alt="Royal Canin Kitten"></li>
                 <li class="brandName"><h1>
                    Royal Canin Feline Health Nutrition Thin Slices in Gravy Wet Kitten Food, 3-oz, case of 24</h1>
                 </li>
                 <li class="qty">
-                    <div class="quantity-buttons">
+                    <div class="quantity-btns">
                         <fieldset>
                             <legend>Qty:</legend>
                             <input type="button" value="-" class="decrease" />
                             <input type="text" id="ten-max" value="0" />
                             <input type="button" value="+" class="increase" />
-                            <span class="side-info">36.52$</span>
+                            <span class="sum-info">36.52$</span>
                         </fieldset>
                     </div>
                 </li>  
                 <hr>
-                 <li class="sub"><span>Subtotal:</span> <span class="side-info">$36.52</span></li>   
-                 <li class="shipping"><span>Flat-Rate Shipping:</span> <span class="side-info">4.95$</span></li>
-                 <li class="tax"><span>Estimated Tax:</span> <span class="side-info">$3.68</span></li>
+                 <li class="sub"><span>Subtotal:</span> <span class="sum-info">$36.52</span></li>   
+                 <li class="shipping"><span>Flat-Rate Shipping:</span> <span class="sum-info">4.95$</span></li>
+                 <li class="tax"><span>Estimated Tax:</span> <span class="sum-info">$3.68</span></li>
                 <hr>
-                <li class="total"><span>Order Total:</span> <span class="side-info">$45.15</span></li>
+                <li class="total"><span>Order Total:</span> <span class="sum-info">$45.15</span></li>
             </ul>
         </article>
       </section>
        <!--button add items-->
        <a href="store.html" class="btn-add-items">Add Items</a>
        <!--button continue to personal details-->
-       <a href="information.html" class="btn-personal-details">Continue to personal details</a>
+       <a href="personalDetails.html" class="btn-personal-details">Continue to personal details</a>
 </div>       
 
-
- <!--footer-->
+<!--footer-->
 <footer>
     <h1 id="footer-title">Chewy</h1>
     <h3 id="footer-subtitle">with love to pets</h3> 
@@ -75,7 +74,7 @@
 <script>
 // increase and decrease input
 $(function () {
-set_($('#ten-max'), 10);  //return 9 maximum digites
+set_($('#ten-max'), 10);  // max 10
 
 function set_(_this, max) {
     var block = _this.parent();

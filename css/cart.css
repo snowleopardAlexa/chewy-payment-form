@@ -1,16 +1,31 @@
-/* MAIN CONTENT */
+/* CART */
 
+html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lexend', sans-serif;
+    color: #1e535f;
+}
+
+/* CART */
 .cart {
-    margin-top: 20px;
     padding: 50px;
     max-width: 70%;
+    /* align center cart */
     margin: 0 auto;
+    /* shadows around  borders */
     -webkit-box-shadow: 0 10px 6px 6px #ecf2f5;
     -moz-box-shadow: 0 3px 6px 6px #ecf2f5;
          box-shadow: 0px 3px 6px 6px #ecf2f5;
   }
 
-  .remove-item {
+  /* button remove item */
+  .remove-btn-position {
+      margin-top: 5px;
+      float: right;
+  }
+
+  .remove-item-btn {
       border: none;
       cursor: pointer;
       background: none;
@@ -19,7 +34,8 @@
       font-weight: bold;
   }
 
-  .quantity-buttons {
+  /* minus plus change quantity buttons */
+  .quantity-btns {
       margin-top: 10px;
   }
 
@@ -35,67 +51,48 @@
       background-color: #16aec9;
       color: #fff;
       cursor: pointer;
-      width: 24px;
-      height: 24px;
+      width: 25px;
+      height: 25px;
   }
 
   input[type="text"] {
+      font-family: 'Lexend', sans-serif;
       text-align: center;
       color: #1e535f;
       border: 1px solid #16aec9;
-      height: 22px;
-      width: 50px;
+      height: 28px;
+      width: 40px;
   }
 
   legend {
       margin-bottom: 5px;
   }
+/* end of minus plus change quantity buttons */
 
-  .side-info {
-      margin-top: 5px;
-  }
-
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-html {
-  font-family: 'Lexend', sans-serif;
-  font-size: 14px;
-  box-sizing: border-box;
-}
-
-@supports (font-variation-settings: normal) {
-  html {
-    font-family: 'Lexend', sans-serif;
-  }
-}
-
-html {
-    color: #1e535f;
-}
-
-/* ORDER SUMMARY */
-.intro li {
-    display: inline-block;
-    list-style-type: none;
-}
-
-/* UL list */
+/* list */
 .details {
     list-style-type: none;
 }
 
-/* list elements */
+/* royal canin wet food image */
+.img-item {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    /* align center img: display block + margins auto */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 150px;
+}
+
+/* list li elements */
 .title, .brandName, .qty, .edit, .sub, .total, .shipping, .tax {
     font-family: 'Lexend', sans-serif;
     margin-top: 10px;
 }
 
 .title {
-    margin-bottom: 20px;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -104,53 +101,13 @@ html {
     font-size: 1.1rem;
 }
 
-.image {
-    margin-top: 50px;
-    margin-bottom: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    height: 150px;
-}
-
-.side-info {
-    float: right;
-}
-
-
-
 .total {
     font-size: 1.5rem;
     font-weight: bold;
 }
 
-/* button edit */
-.btn-personal-details, .btn-add-items {
-    font-size: 1.5rem;  
-    display: block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid #ffffff;
-    border-radius: 0.12em;
-    box-sizing: none;
-    background-color: #16aec9;
-    color: #ffffff;
-    font-family: 'Chewy', cursive;
-    text-align: center;
-    transition: all 0.2s;
-    text-decoration: none;
-}
-
-.btn-personal-details {
-    margin-top: 10px;
-}
-
-.btn-add-items {
-    margin-top: 50px;
-}
-
-.btn-add-items:hover, .btn-personal-details:hover {
-    background-color: #0f90db;
+.sum-info {
+    float: right;
 }
 
 hr {
@@ -160,3 +117,29 @@ hr {
     margin-left: auto;
     margin-right: auto;
 }
+/* end of details list */
+
+/* button add items and button personal details */
+.btn-add-items, .btn-personal-details {
+    font-size: 1.5rem;  
+    display: block;
+    padding: 0.35em 1.5em;
+    background-color: #16aec9;
+    color: #ffffff;
+    font-family: 'Chewy', cursive;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-add-items {
+    margin-top: 50px;
+}
+
+.btn-personal-details {
+    margin-top: 10px;
+}
+
+.btn-add-items:hover, .btn-personal-details:hover {
+    background-color: #0f90db;
+}
+

@@ -1,6 +1,7 @@
 html {
     margin: 0;
     color: #1e535f;
+    font-family: 'Lexend', sans-serif;
   }
 
   .shipping {
@@ -38,16 +39,27 @@ fieldset {
 legend {
     font-size: 1.3rem;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
 ::placeholder {
     color: #16aec9;
+    font-family: 'Lexend', sans-serif;
 }
 
 label {
     font-size: 1.2rem;
 }
 
+/* date */
+input[type="date"] {
+    color: #16aec9;
+    font-family: 'Lexend', sans-serif;
+}
+
+::-webkit-calendar-picker-indicator {
+    color: #16aec9;
+}
 
 
 label {
