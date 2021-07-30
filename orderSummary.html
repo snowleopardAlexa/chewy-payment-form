@@ -52,24 +52,47 @@
         <fieldset>
             <legend>Payment</legend>
             <span>All transactions are secure and encrypted</span>
-            <div id="shippingMethodType" class="customRadioBtn">
-                <label for="free" class="radioLabel">
-                    <input type="radio" id="free" name="shippingOption" value="0.00" checked>
-                    <span></span>Free shipping (3-7 days) <strong>Free</strong>
+            <div class="form">
+                <div class="fields fields-2">
+                  <label class="field">
+                    <span class="field-label" for="firstname">First name</span>
+                    <input class="field-input" type="text" id="firstname" />
+                  </label>
+                  <label class="field">
+                    <span class="field-label" for="lastname">Last name</span>
+                    <input class="field-input" type="text" id="lastname" />
+                  </label>
+                </div>
+                <label class="field">
+                  <span class="field-label" for="address">Address</span>
+                  <input class="field-input" type="text" id="address" />
                 </label>
-                <label for="secondDay" class="radioLabel">
-                    <input type="radio" id="secondDay" name="shippingOption" value="7.99">
-                    <span></span>Second day shipping (3 days) <strong>$7.99</strong>
+                <label class="field">
+                  <span class="field-label" for="tel">Phone</span>
+                  <select class="field-input" id="phone">
+                  </select>
                 </label>
-                <label for="nextDay" class="radioLabel">
-                    <input type="radio" id="nextDay" name="shippingOption" value="21.99">
-                    <span></span>Next day shipping (2 days) <strong>$21.99</strong>
-                </label>
-            </div>
+                <div class="fields fields-3">
+                  <label class="field">
+                    <span class="field-label" for="zipcode">Zip code</span>
+                    <input class="field-input" type="text" id="zipcode" />
+                  </label>
+                  <label class="field">
+                    <span class="field-label" for="city">City</span>
+                    <input class="field-input" type="text" id="city" />
+                  </label>
+                  <label class="field">
+                    <span class="field-label" for="state">State</span>
+                    <select class="field-input" id="state">
+                      <option value=""></option>
+                    </select>
+                  </label>
+                </div>
+             </div>
         </fieldset>
     </form>
      <!--button continue to personal details-->
-    <a href="orderSummary.html" class="btn-continue">Continue to payment</a>
+    <a href="orderSummary.html" class="btn-continue">COMPLETE ORDER</a>
     </div>
 
  <div class="totalCart">
